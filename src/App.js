@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { HashRouter,Router, BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/footer';
 import AddressBar from './components/addressBar';
@@ -7,18 +8,34 @@ import Carrer from './pages/carrer';
 import Token from './pages/token';
 import User from './pages/users';
 import Partners from './pages/partners';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import SignIn from './pages/sign_in';
+import Home from './pages/home';
+import SignUp from './pages/sign_up';
+import Investors from './pages/investors';
+import Teams from './pages/teams';
 
 
 function App() {
   return (
     <div>
+      <BrowserRouter>
       <NavbarCustom/>
-      <Token/>
+        <Switch>
+          <Route exact path='/home'><Home/></Route>
+          <Route path='/team'><Teams/></Route>
+          <Route path='/token'><Token/></Route>
+          <Route path='/carrer'><Carrer/></Route>
+          <Route path='/whitepaper'><Teams/></Route>
+          <Route path='/investor'><Investors/></Route>
+          <Route path='/partners'><Partners/></Route>
+          <Route path='/users'><User/></Route>
+        </Switch>
+      </BrowserRouter>
       <AddressBar/>
       <Footer/>
     </div>
   );
+
 }
 
 export default App;
