@@ -18,10 +18,10 @@ import Teams from './pages/teams';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
       <NavbarCustom/>
         <Switch>
-          <Route exact path='/home'><Home/></Route>
+          <Route exact path='/'><Home/></Route>
           <Route path='/team'><Teams/></Route>
           <Route path='/token'><Token/></Route>
           <Route path='/carrer'><Carrer/></Route>
@@ -30,7 +30,7 @@ function App() {
           <Route path='/partners'><Partners/></Route>
           <Route path='/users'><User/></Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
       <AddressBar/>
       <Footer/>
     </div>
