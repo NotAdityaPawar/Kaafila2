@@ -13,6 +13,7 @@ import Home from './pages/home';
 import SignUp from './pages/sign_up';
 import Investors from './pages/investors';
 import Teams from './pages/teams';
+import MVP from './pages/mvp';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path='/investor'><Investors/></Route>
           <Route path='/partners'><Partners/></Route>
           <Route path='/users'><User/></Route>
+          <Route path='/mvp'><MVP/></Route>
         </Switch>
       </HashRouter>
       <AddressBar/>

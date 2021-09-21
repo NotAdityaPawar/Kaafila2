@@ -1,4 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap'
+import {AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMail, AiFillMediumSquare, AiFillTwitterSquare, AiFillYoutube, AiOutlineDisconnect} from 'react-icons/ai/'
+import {FaDiscord, FaRedditSquare, FaTelegram, FaTelegramPlane} from 'react-icons/fa'
 
 export default function AddressBar() {
     const styless = {
@@ -27,21 +29,54 @@ function Address() {
     )
 }
 function FindUs() {
+    const links = {
+        "Twitter": "https://twitter.com/Kaafila2020",
+        "Linkedin": "https://www.linkedin.com/company/kaafila2021",
+        "Facebook": "https://www.facebook.com/Kaafila-112229374449872",
+        "Youtube": "https://youtube.com/c/Kaafila",
+        "Discord": "https://discord.gg/z4wpsxYyTU",
+        "Telegram": "https://t.me/joinchat/RSRLtQmq0d2eClWg",
+        "Reddit": "https://www.reddit.com/r/Kaafila/",
+        "Github": "https://github.com/Kaafila2021",
+        "Lunarcrush": "https://lunarcrush.com/coins/kfl/kaafila?section=summary",
+        "Medium":"https://medium.com/@kaafila",
+        "Email" : "info@kaafila.org",
+        "Instagram" : "https://www.instagram.com/__kaafila/"
+    }
     return (
-        <div>
+        <div style={{"textAlign":"center"}}>
             <h2>Find us on</h2>
             <Container>
                 <Row>
-                    <img src=""/>
+                    <Col>
+                        <Container>
+                            <AiFillTwitterSquare/>
+                            <AiFillLinkedin/>
+                            <AiFillFacebook/>
+                            <AiFillYoutube/>
+                            <FaDiscord/>
+                        </Container>
+                    </Col>
                 </Row>
-                <Row></Row>
+                <Row>
+                    <Col>
+                        <Container>
+                            <FaTelegramPlane/>
+                            <FaRedditSquare/>
+                            <AiFillGithub/>
+                            <AiFillMediumSquare/>
+                            <AiFillMail/>
+                            <AiFillInstagram/>
+                        </Container>
+                    </Col>
+                </Row>
             </Container>
         </div>
     )
 }
 function Kaafila() {
     return (
-        <div>
+        <div style={{"textAlignLast":"end"}}>
             <h2>Kaafila</h2>
             <p>Pitchdesk</p>
         </div>

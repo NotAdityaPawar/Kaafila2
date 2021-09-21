@@ -8,13 +8,15 @@ export default function NavbarCustom() {
         <div>
             <Navbar collapseOnSelect expand="lg"  >
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand>
+                        <Link to = "/">
                         <img
                         src={KaafilaLogo}
                         width="70"
                         height="70"
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"/>
+                        </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

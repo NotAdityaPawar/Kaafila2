@@ -1,4 +1,4 @@
-import { Col, Container ,Image,Row,Button} from "react-bootstrap";
+import { Col, Container ,Image,Row,Button,Form} from "react-bootstrap";
 
 export default function Carrer(){
     const data = {
@@ -23,6 +23,44 @@ export default function Carrer(){
             <Container>{data.para4}</Container>
             <Container>{data.para5.p1}</Container>
             <Container>{data.para6}</Container>
+            <CareerContact/>
         </Container>
+    )
+}
+
+
+function CareerContact(){
+    return(
+        <div>
+            <Container>
+            <Row>
+                <Col>
+                    <Container style={{background:"#031835",color:"white",padding:"20px"}}>
+                        <h2>Contact Us</h2>
+                        <Form>
+                        <Form.Group className="mb-3" controlId="formGroupName">
+                                <Form.Label>Name</Form.Label>
+                                <Form.Control type="name"  />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupEmail">
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control type="email"/>
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupUrl">
+                                <Form.Label>LinkedIn Profile</Form.Label>
+                                <Form.Control type="url" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupInterest">
+                                <Form.Label>Area of Interest</Form.Label>
+                                <Form.Control as="textarea" rows={3}/>
+                            </Form.Group>
+                            <Button variant="primary" type="submit">Submit</Button>
+                        </Form>
+                    </Container>
+                </Col>
+                <Col><Image></Image></Col>
+            </Row>
+        </Container>
+        </div>
     )
 }
