@@ -2,7 +2,7 @@ import { Container,Button, Row, Col,Form,Image } from "react-bootstrap"
 
 export default function Partners(){
     return(
-        <Container fluid>
+        <Container >
             <h1>Partners</h1>
             <p>Kaafila is a decentralized media platform that connects viewers directly with the content providers.</p>
             <Button variant="primary">Check out our team</Button>
@@ -24,6 +24,9 @@ function JoinUs(){
                     <h2>Software Engineer(Full stack)</h2>
                     <Button>View Details</Button>
                 </Col>
+            </Row>
+            <Row>
+                <Col><ContactForm/></Col>
             </Row>
         </div>
     )

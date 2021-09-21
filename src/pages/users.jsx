@@ -1,12 +1,16 @@
 import Image from "../images/form_image.jpg"
 import { Container,Button ,Form,Col,Row} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function User(){
     return(
-        <Container fluid>
-            <h1>User</h1>
-            <p>Kaafila is a decentralized media platform that connects viewers directly with the content providers.</p>
-            <Button variant="primary">Check out our team</Button>
+        <Container>
+            <Container style={{textAlign:"center"}}>
+                <h1 style={{color:"#40928c"}}>User</h1>
+                <p>Kaafila is a decentralized media platform that connects viewers directly with the content providers.</p>
+                <Link to= "team"><Button variant="primary" style={{background:"#031835"}}>Check out our team</Button></Link>
+            </Container>
+            <ContactForm/>
         </Container>
     )
 }
@@ -36,15 +40,18 @@ function ContactForm(){
                                 <Form.Label>Email</Form.Label>
                                 <Form.Control type="email"/>
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Message</Form.Label>
-                                <Form.Control as="textarea" rows={3} />
+                            <Form.Group className="mb-3" controlId="formGroupUrl">
+                                <Form.Label>LinkedIn Profile</Form.Label>
+                                <Form.Control type="url" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formGroupInterest">
+                                <Form.Label>Area of Interest</Form.Label>
+                                <Form.Control as="textarea" rows={3}/>
                             </Form.Group>
                             <Button variant="primary" type="submit">Submit</Button>
                         </Form>
                     </Container>
                 </Col>
-                <Col><Image></Image></Col>
             </Row>
         </Container>
         </div>

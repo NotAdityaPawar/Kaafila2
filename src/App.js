@@ -14,6 +14,7 @@ import SignUp from './pages/sign_up';
 import Investors from './pages/investors';
 import Teams from './pages/teams';
 import MVP from './pages/mvp';
+import Whitepaper from './pages/whitepaper';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path='/team'><Teams/></Route>
           <Route path='/token'><Token/></Route>
           <Route path='/carrer'><Carrer/></Route>
-          <Route path='/whitepaper'><Teams/></Route>
+          <Route path='/whitepaper'><Whitepaper/></Route>
           <Route path='/investor'><Investors/></Route>
           <Route path='/partners'><Partners/></Route>
           <Route path='/users'><User/></Route>

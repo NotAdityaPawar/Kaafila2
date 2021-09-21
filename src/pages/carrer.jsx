@@ -15,14 +15,19 @@ export default function Carrer(){
         },
         para6: `Please see Section 15 (Kaafila Team Roles & Responsibilities) of our whitepaper to learn more. We have about 50 roles across these four groups , which will be filled ongoing basis along with the project growth.`
     }
+    const styless = {
+        container:{
+            "padding":"10px"
+        }
+    }
     return(
-        <Container>
-            <Container>{data.para1}</Container>
-            <Container>{data.para2}</Container>
-            <Container>{data.para3}</Container>
-            <Container>{data.para4}</Container>
-            <Container>{data.para5.p1}</Container>
-            <Container>{data.para6}</Container>
+        <Container style={styless.container}>
+            <Container style={styless.container}>{data.para1}</Container>
+            <Container style={styless.container}>{data.para2}</Container>
+            <Container style={styless.container} >{data.para3}</Container>
+            <Container style={styless.container}>{data.para4}</Container>
+            <Container style={styless.container}>{data.para5.p1}</Container>
+            <Container style={styless.container}>{data.para6}</Container>
             <CareerContact/>
         </Container>
     )

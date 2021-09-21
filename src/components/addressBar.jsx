@@ -43,6 +43,11 @@ function FindUs() {
         "Email" : "info@kaafila.org",
         "Instagram" : "https://www.instagram.com/__kaafila/"
     }
+    const styless = {
+        a:{
+            "textDecoration" : "None"
+        }
+    }
     return (
         <div style={{"textAlign":"center"}}>
             <h2>Find us on</h2>
@@ -50,23 +55,23 @@ function FindUs() {
                 <Row>
                     <Col>
                         <Container>
-                            <AiFillTwitterSquare/>
-                            <AiFillLinkedin/>
-                            <AiFillFacebook/>
-                            <AiFillYoutube/>
-                            <FaDiscord/>
+                            <a href={links.Twitter}><AiFillTwitterSquare/></a>
+                            <a href={links.Linkedin}>  <AiFillLinkedin/></a>
+                            <a href={links.Facebook}> <AiFillFacebook/></a>
+                            <a href={links.Youtube}>  <AiFillYoutube/></a>
+                            <a href={links.Discord}>  <FaDiscord/></a>
                         </Container>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <Container>
-                            <FaTelegramPlane/>
-                            <FaRedditSquare/>
-                            <AiFillGithub/>
-                            <AiFillMediumSquare/>
-                            <AiFillMail/>
-                            <AiFillInstagram/>
+                        <a href={links.Telegram}> <FaTelegramPlane/></a>
+                        <a href={links.Reddit}>  <FaRedditSquare/></a>
+                        <a href={links.Github}>   <AiFillGithub/></a>
+                        <a href={links.Medium}>   <AiFillMediumSquare/></a>
+                        <a href={links.Email}>   <AiFillMail/></a>
+                        <a href={links.Instagram}>    <AiFillInstagram/></a>
                         </Container>
                     </Col>
                 </Row>

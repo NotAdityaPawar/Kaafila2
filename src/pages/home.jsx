@@ -65,18 +65,6 @@ export default function Home(){
                 image={data[2].imageSRC} content={data[2].content} imgPos="left"
             />
 
-            <ContactCard
-                title={data[3].title} image={data[3].imageSRC}
-                imageGrid={
-                    <div>
-                        <Row xs={1} md={2} className="g-4">
-                            {Array.from({ length: 4 }).map((_, idx) => (
-                            <Col><CustomButton style={{  borderColor:'52625a' }}
-                            content="Hello" variant="outline-primary"/></Col>))}
-                        </Row>
-                    </div>}
-                />
-
         </Container>
     )
 }
