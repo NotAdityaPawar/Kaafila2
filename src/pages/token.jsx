@@ -2,18 +2,36 @@ import { Container, Row ,Button,Col} from "react-bootstrap";
 
 export default function Token(){
     const tokenContents = ["Token Name: Kaafila","Token Ticker: KFL","Total Supply: 100 Billion","Token Price: $0.0001","Role Utility Token","Organisation Structure: Decentralized","Consensus Mechanism: Not Mineable","Algorithm: Pure PoS (Algorand Blockchain)"];
+    const styless = {
+        button :{
+            width:"50%",
+            backgroundColor:"#031835",
+            textAlign:"center",
+            "&:hover": {
+                backgroundColor: "#efefef",
+                color:"#21211"
+            }
+        },
+        buttonContainer:{
+            padding:"5px"
+        },
+        header:{
+            textAlign:"center"
+        }
+    }
     return(
         <Container>
             <Row>
                 <Col>
-                    <h2>Token Information</h2>
+                    <h2 style={styless.header}>Token Information</h2>
                 </Col>
             </Row>
             <Row>
-                {tokenContents.map((item,value)=>(
-                    <Col sm={12} lg={4}><Button>{item}</Button></Col>
-                ))}
-                <br/>
+                <Col style={styless.header}>
+                    {tokenContents.map((items,index)=>
+                        <div style={styless.buttonContainer}><Button style={styless.button} sm={12}>{items}</Button></div>
+                    )}
+                </Col>
             </Row>
         </Container>
     )

@@ -7,7 +7,8 @@ export default function AddressBar() {
         color:"white",
         backgroundColor:"#031835",
         padding:"20px",
-        fontWeight:"600"
+        fontWeight:"600",
+        marginTop:"20px"
     }
     return (
         <Container style={styless} fluid>

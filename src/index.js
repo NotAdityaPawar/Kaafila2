@@ -4,9 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import {Router,Route} from 'react-router'
-import Home from './pages/home';
-import SignUp from './pages/sign_up';
 
 
 ReactDOM.render(

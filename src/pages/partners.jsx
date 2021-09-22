@@ -35,8 +35,13 @@ function JoinUs(){
 
 
 function ContactForm(){
+    const styless = {
+        container:{
+            marginTop:"20px"
+        }
+    }
     return(
-        <div>
+        <div style={styless.container}>
             <Container>
             <Row>
                 <Col>

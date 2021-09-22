@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { HashRouter,Router, BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/footer';
@@ -26,12 +25,14 @@ function App() {
           <Route exact path='/home'><Home/></Route>
           <Route path='/team'><Teams/></Route>
           <Route path='/token'><Token/></Route>
-          <Route path='/carrer'><Carrer/></Route>
+          <Route path='/career'><Carrer/></Route>
           <Route path='/whitepaper'><Whitepaper/></Route>
           <Route path='/investor'><Investors/></Route>
           <Route path='/partners'><Partners/></Route>
           <Route path='/users'><User/></Route>
           <Route path='/mvp'><MVP/></Route>
+          <Route path='/signin'><SignIn/></Route>
+          <Route path='/signup'><SignUp/></Route>
         </Switch>
       </HashRouter>
       <AddressBar/>

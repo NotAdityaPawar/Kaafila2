@@ -55,13 +55,13 @@ export default function Home(){
             />
 
             <PageContentCard
-                title={data[1].title}
+                title={<div style={{color:'#40928c'}}>{data[1].title}</div>}
                 image={data[1].imageSRC}
                 content={data[1].content}
                 imgPos="right"
             />
 
-            <PageContentCard title={data[2].title}
+            <PageContentCard title={<div style={{color:'#40928c'}}>{data[2].title}</div>}
                 image={data[2].imageSRC} content={data[2].content} imgPos="left"
             />
 

@@ -3,10 +3,20 @@ import {Link} from 'react-router-dom';
 import { Navbar, Container ,Nav} from "react-bootstrap"
 import KaafilaLogo from "../images/kaafilalogo.png"
 export default function NavbarCustom() {
-    const navbarContents = ["Home", "Team", "Token", "Carrer", "Whitepaper", "Investor", "Partners", "Users", "MVP"];
+    const styless = {
+        link:{
+            "textDecoration":"none",
+            "color":"#031835",
+            fontSize:"larger"
+        },
+        navbar:{
+            "marginBottom":"20px"
+        }
+    }
+    const navbarContents = ["Home", "Team", "Token", "Career", "Whitepaper", "Investor", "Partners", "Users", "MVP"];
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg"  >
+            <Navbar collapseOnSelect expand="lg" style={styless.navbar}>
                 <Container>
                     <Navbar.Brand>
                         <Link to = "/home">
@@ -23,7 +33,7 @@ export default function NavbarCustom() {
                         <Nav className="me-auto">
                             {navbarContents.map((item,values)=>(
                                 <Nav.Link>
-                                    <Link to={item}>{item}</Link>
+                                    <Link to={item} style={styless.link}>{item}</Link>
                                 </Nav.Link>
                             ))}
                         </Nav>
