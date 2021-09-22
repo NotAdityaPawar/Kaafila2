@@ -3,13 +3,13 @@ import {Link} from 'react-router-dom';
 import { Navbar, Container ,Nav} from "react-bootstrap"
 import KaafilaLogo from "../images/kaafilalogo.png"
 export default function NavbarCustom() {
-    const navbarContents = ["/", "Team", "Token", "Carrer", "Whitepaper", "Investor", "Partners", "Users", "MVP"];
+    const navbarContents = ["Home", "Team", "Token", "Carrer", "Whitepaper", "Investor", "Partners", "Users", "MVP"];
     return (
         <div>
             <Navbar collapseOnSelect expand="lg"  >
                 <Container>
                     <Navbar.Brand>
-                        <Link to = "/">
+                        <Link to = "/home">
                         <img
                         src={KaafilaLogo}
                         width="70"

@@ -45,7 +45,8 @@ function FindUs() {
     }
     const styless = {
         a:{
-            "textDecoration" : "None"
+            "textDecoration" : "None",
+            "color":"white"
         }
     }
     return (
@@ -55,23 +56,23 @@ function FindUs() {
                 <Row>
                     <Col>
                         <Container>
-                            <a href={links.Twitter}><AiFillTwitterSquare/></a>
-                            <a href={links.Linkedin}>  <AiFillLinkedin/></a>
-                            <a href={links.Facebook}> <AiFillFacebook/></a>
-                            <a href={links.Youtube}>  <AiFillYoutube/></a>
-                            <a href={links.Discord}>  <FaDiscord/></a>
+                            <a href={links.Twitter} style={styless.a}><AiFillTwitterSquare/></a>
+                            <a href={links.Linkedin} style={styless.a}>  <AiFillLinkedin/></a>
+                            <a href={links.Facebook}style={styless.a}> <AiFillFacebook/></a>
+                            <a href={links.Youtube}style={styless.a}>  <AiFillYoutube/></a>
+                            <a href={links.Discord}style={styless.a}>  <FaDiscord/></a>
                         </Container>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <Container>
-                        <a href={links.Telegram}> <FaTelegramPlane/></a>
-                        <a href={links.Reddit}>  <FaRedditSquare/></a>
-                        <a href={links.Github}>   <AiFillGithub/></a>
-                        <a href={links.Medium}>   <AiFillMediumSquare/></a>
-                        <a href={links.Email}>   <AiFillMail/></a>
-                        <a href={links.Instagram}>    <AiFillInstagram/></a>
+                            <a href={links.Telegram}style={styless.a}> <FaTelegramPlane/></a>
+                            <a href={links.Reddit}style={styless.a}>  <FaRedditSquare/></a>
+                            <a href={links.Github}style={styless.a}>   <AiFillGithub/></a>
+                            <a href={links.Medium}style={styless.a}>   <AiFillMediumSquare/></a>
+                            <a href={links.Email}style={styless.a}>   <AiFillMail/></a>
+                            <a href={links.Instagram}style={styless.a}>    <AiFillInstagram/></a>
                         </Container>
                     </Col>
                 </Row>

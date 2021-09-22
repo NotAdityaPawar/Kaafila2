@@ -1,11 +1,12 @@
 import { Container,Button, Row, Col,Form,Image } from "react-bootstrap"
+import {Link} from 'react-router-dom'
 
 export default function Partners(){
     return(
         <Container >
             <h1>Partners</h1>
             <p>Kaafila is a decentralized media platform that connects viewers directly with the content providers.</p>
-            <Button variant="primary">Check out our team</Button>
+            <Link to="career"><Button variant="primary" >Check out our team</Button></Link>
             <JoinUs/>
         </Container>
     )
@@ -18,7 +19,7 @@ function JoinUs(){
             <Row>
                 <Col sm={12 }lg>
                     <h2>Software Engineer(Full stack)</h2>
-                    <Button>View Details</Button>
+                    <Button >View Details</Button>
                 </Col>
                 <Col sm={12} lg>
                     <h2>Software Engineer(Full stack)</h2>

@@ -23,7 +23,7 @@ function App() {
       <HashRouter>
       <NavbarCustom/>
         <Switch>
-          <Route exact path='/'><Home/></Route>
+          <Route exact path='/home'><Home/></Route>
           <Route path='/team'><Teams/></Route>
           <Route path='/token'><Token/></Route>
           <Route path='/carrer'><Carrer/></Route>
