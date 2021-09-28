@@ -13,7 +13,7 @@ export default function NavbarCustom() {
             "marginBottom":"20px"
         }
     }
-    const navbarContents = ["Home", "Team", "Token", "Career", "Whitepaper", "Investor", "Partners", "Users","Contact", "MVP"];
+    const navbarContents = ["Home", "Team", "Token", "Career", "Whitepaper", "Investor", "Users","Contact", "MVP"];
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" style={styless.navbar}>
