@@ -8,9 +8,9 @@ export default function User(){
             <Container style={{textAlign:"center"}}>
                 <h1 style={{color:"#40928c"}}>User</h1>
                 <p>Kaafila is a decentralized media platform that connects viewers directly with the content providers.</p>
-                <Link to= "team"><Button variant="primary" style={{background:"#031835"}}>Check out our team</Button></Link>
+                <Link to= "team"><Button variant="primary" style={{background:"#40928c"}}>Check out our team</Button></Link>
             </Container>
-            <ContactForm/>
+
         </Container>
     )
 }
@@ -29,7 +29,7 @@ function ContactForm(){
             <Container>
             <Row>
                 <Col>
-                    <Container style={{background:"#031835",color:"white",padding:"20px"}}>
+                    <Container style={{background:"#40928c",color:"white",padding:"20px"}}>
                         <h2>Contact Us</h2>
                         <Form>
                         <Form.Group className="mb-3" controlId="formGroupName">

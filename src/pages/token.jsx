@@ -5,7 +5,7 @@ export default function Token(){
     const styless = {
         button :{
             width:"50%",
-            backgroundColor:"#031835",
+            backgroundColor:"#40928c",
             textAlign:"center",
             "&:hover": {
                 backgroundColor: "#efefef",

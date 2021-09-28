@@ -13,7 +13,7 @@ export default function NavbarCustom() {
             "marginBottom":"20px"
         }
     }
-    const navbarContents = ["Home", "Team", "Token", "Career", "Whitepaper", "Investor", "Partners", "Users", "MVP"];
+    const navbarContents = ["Home", "Team", "Token", "Career", "Whitepaper", "Investor", "Partners", "Users","Contact", "MVP"];
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" style={styless.navbar}>
@@ -22,8 +22,7 @@ export default function NavbarCustom() {
                         <Link to = "/home">
                         <img
                         src={KaafilaLogo}
-                        width="70"
-                        height="70"
+                        width="80"
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"/>
                         </Link>

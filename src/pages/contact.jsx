@@ -1,37 +1,5 @@
-import { Container,Button, Row, Col,Form,Image } from "react-bootstrap"
-import {Link} from 'react-router-dom'
-
-export default function Partners(){
-    return(
-        <Container >
-            <h1>Partners</h1>
-            <p>Kaafila is a decentralized media platform that connects viewers directly with the content providers.</p>
-            <Link to="career"><Button variant="primary" >Check out our team</Button></Link>
-            <JoinUs/>
-        </Container>
-    )
-}
-
-//component for the full stack and back end
-function JoinUs(){
-    return(
-        <div>
-            <Row>
-                <Col sm={12 }lg>
-                    <h2>Software Engineer(Full stack)</h2>
-                    <Button >View Details</Button>
-                </Col>
-                <Col sm={12} lg>
-                    <h2>Software Engineer(Full stack)</h2>
-                    <Button>View Details</Button>
-                </Col>
-            </Row>
-        </div>
-    )
-}
-
-
-function ContactForm(){
+import {Container,Row,Col,Form,Button} from "react-bootstrap"
+export default function ContactForm(){
     const styless = {
         container:{
             marginTop:"20px"

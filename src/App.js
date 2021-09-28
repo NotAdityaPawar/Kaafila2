@@ -14,6 +14,7 @@ import Investors from './pages/investors';
 import Teams from './pages/teams';
 import MVP from './pages/mvp';
 import Whitepaper from './pages/whitepaper';
+import ContactForm from './pages/contact';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path='/mvp'><MVP/></Route>
           <Route path='/signin'><SignIn/></Route>
           <Route path='/signup'><SignUp/></Route>
+          <Route path="/contact"><ContactForm/></Route>
         </Switch>
       </HashRouter>
       <AddressBar/>

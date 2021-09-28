@@ -3,6 +3,12 @@ import Chart1 from '../images/TokenDistributionChart.png'
 import Chart2 from '../images/TokenUsageChart.png'
 
 export default function Investors(){
+    const styless = {
+        Chart:{
+            textAlign:"center"
+        }
+    }
+
     const data = {
         para1 : `Kaafila is a new video sharing platform, built using blockchain technology. Using this video sharing platform, Kaafila aims to provide useful content and learning resources, along with tests, certifications, and internships wherever possible, to a wide range of users of different age groups, from school children to working professionals, to help in their careers. The focus is on creating a large network of people worldwide who are constantly learning to progress in their career and life. The focus is also on offering wide range of learning resources either free or at very low cost, so that people across the world can learn and benefit irrespective of their current income level.`,
         para2 : `Kaafila’s motto is: "Knowledge for Lifetime", and the same is reflected in our token name "KFL". Over time, we believe that Kaafila will help millions of people in their education and career, through the courses, certificates, and internships offered through our platform.`,
@@ -17,12 +23,11 @@ export default function Investors(){
                 <h2>Investors</h2>
                 <p>{data.para1}</p>
             </Container>
-            <Image src={Chart1}/>
+            <Container style={styless.Chart}><Image src={Chart1} /></Container>
             <Container>{data.para2}</Container>
             <Container>{data.para3}</Container>
-            <Image src={Chart2}/>
+            <Container style={styless.Chart}><Image src={Chart2} /></Container>
             <Container>{data.para4}</Container>
-            <ContactForm/>
         </Container>
     )
 }
@@ -33,7 +38,7 @@ function ContactForm(){
             <Container>
             <Row>
                 <Col>
-                    <Container style={{background:"#031835",color:"white",padding:"20px"}}>
+                    <Container style={{background:"#40928c",color:"white",padding:"20px"}}>
                         <h2>Contact Us</h2>
                         <Form>
                         <Form.Group className="mb-3" controlId="formGroupName">

@@ -3,7 +3,7 @@ import { Container,Button} from "react-bootstrap"
 export default function MVP(){
     const styless = {
         button:{
-            backgroundColor:"#031835",
+            backgroundColor:"#40928C",
             color:"white"
         }
     }

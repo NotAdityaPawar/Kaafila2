@@ -28,7 +28,6 @@ export default function Carrer(){
             <Container style={styless.container}>{data.para4}</Container>
             <Container style={styless.container}>{data.para5.p1}</Container>
             <Container style={styless.container}>{data.para6}</Container>
-            <CareerContact/>
         </Container>
     )
 }
@@ -40,7 +39,7 @@ function CareerContact(){
             <Container>
             <Row>
                 <Col>
-                    <Container style={{background:"#031835",color:"white",padding:"20px"}}>
+                    <Container style={{background:"#40928c",color:"white",padding:"20px"}}>
                         <h2>Contact Us</h2>
                         <Form>
                         <Form.Group className="mb-3" controlId="formGroupName">

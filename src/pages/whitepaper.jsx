@@ -3,7 +3,7 @@ import Pdf from "../images/whitepaper.pdf"
 export default function Whitepaper(){
     const styless = {
         button:{
-            backgroundColor:"#031835",
+            backgroundColor:"#40928c",
             color:"white"
         }
     }
