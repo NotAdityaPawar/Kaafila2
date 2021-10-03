@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/Kaafila2/static/css/main.5739ad41.chunk.css",
-    "main.js": "/Kaafila2/static/js/main.f97d853b.chunk.js",
-    "main.js.map": "/Kaafila2/static/js/main.f97d853b.chunk.js.map",
+    "main.js": "/Kaafila2/static/js/main.073a6879.chunk.js",
+    "main.js.map": "/Kaafila2/static/js/main.073a6879.chunk.js.map",
     "runtime-main.js": "/Kaafila2/static/js/runtime-main.b26b85fb.js",
     "runtime-main.js.map": "/Kaafila2/static/js/runtime-main.b26b85fb.js.map",
     "static/css/2.f2512455.chunk.css": "/Kaafila2/static/css/2.f2512455.chunk.css",
-    "static/js/2.0a7517cb.chunk.js": "/Kaafila2/static/js/2.0a7517cb.chunk.js",
-    "static/js/2.0a7517cb.chunk.js.map": "/Kaafila2/static/js/2.0a7517cb.chunk.js.map",
+    "static/js/2.2ceca683.chunk.js": "/Kaafila2/static/js/2.2ceca683.chunk.js",
+    "static/js/2.2ceca683.chunk.js.map": "/Kaafila2/static/js/2.2ceca683.chunk.js.map",
     "static/js/3.e7efbeee.chunk.js": "/Kaafila2/static/js/3.e7efbeee.chunk.js",
     "static/js/3.e7efbeee.chunk.js.map": "/Kaafila2/static/js/3.e7efbeee.chunk.js.map",
     "index.html": "/Kaafila2/index.html",
     "static/css/2.f2512455.chunk.css.map": "/Kaafila2/static/css/2.f2512455.chunk.css.map",
     "static/css/main.5739ad41.chunk.css.map": "/Kaafila2/static/css/main.5739ad41.chunk.css.map",
-    "static/js/2.0a7517cb.chunk.js.LICENSE.txt": "/Kaafila2/static/js/2.0a7517cb.chunk.js.LICENSE.txt",
+    "static/js/2.2ceca683.chunk.js.LICENSE.txt": "/Kaafila2/static/js/2.2ceca683.chunk.js.LICENSE.txt",
+    "static/media/Kaafila-focus-areas.401aaff1.png": "/Kaafila2/static/media/Kaafila-focus-areas.401aaff1.png",
     "static/media/Somtochukwu.5e989894.jpg": "/Kaafila2/static/media/Somtochukwu.5e989894.jpg",
     "static/media/TokenDistributionChart.5718e629.png": "/Kaafila2/static/media/TokenDistributionChart.5718e629.png",
     "static/media/TokenUsageChart.9128047c.png": "/Kaafila2/static/media/TokenUsageChart.9128047c.png",
     "static/media/about.0b65a1e2.png": "/Kaafila2/static/media/about.0b65a1e2.png",
     "static/media/adam.edb8d1df.jpeg": "/Kaafila2/static/media/adam.edb8d1df.jpeg",
+    "static/media/algorand.afa055bb.png": "/Kaafila2/static/media/algorand.afa055bb.png",
     "static/media/dharani.43c28549.jpeg": "/Kaafila2/static/media/dharani.43c28549.jpeg",
     "static/media/ethan.24e2ba71.jpeg": "/Kaafila2/static/media/ethan.24e2ba71.jpeg",
     "static/media/form_image.e657655b.jpg": "/Kaafila2/static/media/form_image.e657655b.jpg",
@@ -27,6 +29,7 @@
     "static/media/madhumita.e6421cfc.jpeg": "/Kaafila2/static/media/madhumita.e6421cfc.jpeg",
     "static/media/marc.625815d6.jpeg": "/Kaafila2/static/media/marc.625815d6.jpeg",
     "static/media/maria.d429a811.jpeg": "/Kaafila2/static/media/maria.d429a811.jpeg",
+    "static/media/mascot.8537e9bb.jpg": "/Kaafila2/static/media/mascot.8537e9bb.jpg",
     "static/media/shankar.2be82430.jpeg": "/Kaafila2/static/media/shankar.2be82430.jpeg",
     "static/media/sign_in.ceafef3e.png": "/Kaafila2/static/media/sign_in.ceafef3e.png",
     "static/media/sign_up.a9ecf5d5.png": "/Kaafila2/static/media/sign_up.a9ecf5d5.png",
@@ -36,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.b26b85fb.js",
     "static/css/2.f2512455.chunk.css",
-    "static/js/2.0a7517cb.chunk.js",
+    "static/js/2.2ceca683.chunk.js",
     "static/css/main.5739ad41.chunk.css",
-    "static/js/main.f97d853b.chunk.js"
+    "static/js/main.073a6879.chunk.js"
   ]
 }
