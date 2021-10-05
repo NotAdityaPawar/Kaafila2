@@ -1,6 +1,6 @@
 import { Col, Container ,Image,Row,Button,Form} from "react-bootstrap";
 
-export default function Carrer(){
+export default function Career(){
     const data = {
         para1: `Kaafila is a new video sharing platform, built using blockchain technology. Using this video sharing platform, Kaafila aims to provide useful content and learning resources, along with tests, certifications, and internships wherever possible, to a wide range of users of different age groups, from school children to working professionals, to help in their careers. The focus is on creating a large network of people worldwide who are constantly learning to progress in their career and life. The focus is also on offering wide range of learning resources either free or at very low cost, so that people across the world can learn and benefit irrespective of their current income level.`,
         para2: 'Kaafila’s motto is: "Knowledge for Lifetime", and the same is reflected in our token name "KFL". Over time, we believe that Kaafila will help millions of people in their education and career, through the courses, certificates, and internships offered through our platform.',

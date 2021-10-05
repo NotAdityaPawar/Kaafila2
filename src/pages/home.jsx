@@ -78,7 +78,8 @@ function getPageContentCard(Card){
 
                     <Container>
                     <Row style={{alignItems:"center"}}>
-                        <Col sm={12} lg style={{alignContent:"center"}}><img src={this.props.image} alt="" /></Col>
+                        <Col sm={12} lg style={{alignContent:"center"}}><img src={this.props.image} style={{maxWidth:"100%"}}
+                        alt="" /></Col>
                         <Col sm ={12} lg style={{alignContent:"center"}}>
                             <h2>{this.props.title}</h2>
                             {this.props.content}
@@ -97,7 +98,8 @@ function getPageContentCard(Card){
                             <h2>{this.props.title}</h2>
                             {this.props.content}
                         </Col>
-                        <Col sm={12} lg style={{alignContent:"center"}}><img src={this.props.image} alt="" /></Col>
+                        <Col sm={12} lg style={{alignContent:"center"}}><img src={this.props.image}
+                        style={{maxWidth:"100%"}} alt="" /></Col>
                     </Row>
                 </Container>
                 )

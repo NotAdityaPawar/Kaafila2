@@ -6,26 +6,33 @@ export default function NavbarCustom() {
     const styless = {
         link:{
             "textDecoration":"none",
-            "color":"#031835",
+            "color":"white",
             fontSize:"larger"
         },
         navbar:{
-            "marginBottom":"20px"
+            "marginBottom":"20px",
+            "backgroundColor":"#40928c"
+        },
+        brand:{
+            "textDecoration":"none",
+            "color":"white",
+            fontSize:"35px"
+        },
+        brandSubtitle:{
+            "textDecoration":"none",
+            "color":"white",
+            fontSize:"15px",
+            paddingRight:"50px"
         }
     }
-    const navbarContents = ["Home", "Team", "Token", "Career", "Whitepaper", "Investor", "Users","Contact", "MVP"];
+    const navbarContents = ["Home", "About", "Whitepaper", "Token", "Team", "Partners", "Careers","Contact", "MVP"];
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" style={styless.navbar}>
                 <Container>
                     <Navbar.Brand>
-                        <Link to = "/home">
-                        <img
-                        src={KaafilaLogo}
-                        width="80"
-                        className="d-inline-block align-top"
-                        alt="React Bootstrap logo"/>
-                        </Link>
+                        <Link to="/home"style={styless.brand}>Kaafila.org</Link>
+                        <p style={styless.brandSubtitle}>Decentralized Media & Education Platform</p>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

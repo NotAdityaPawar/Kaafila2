@@ -11,21 +11,25 @@ export default function AddressBar() {
         marginTop:"20px"
     }
     return (
+
         <Container style={styless} fluid>
+            <Container>
             <Row>
                 <Col sm={6} lg={6}><Address/></Col>
                 <Col sm={6} lg={6}><FindUs/></Col>
             </Row>
+            </Container>
         </Container>
     )
 }
 
 function Address() {
     return (
-        <Container padding>
+        <div style={{paddingLeft:"7px"}}>
             <h2>Address</h2>
             <p>London, United Kingdom</p>
-        </Container>
+            </div>
+
     )
 }
 function FindUs() {
@@ -50,38 +54,37 @@ function FindUs() {
             "textAlign":"right"
         },
         icon:{
-            "height":"4em",
-            "width":"4em"
+            "height":"40px",
+            "width":"40px"
         }
     }
     return (
-        <div style={{"textAlign":"right"}}>
+        <div style={{"textAlign":"right","paddingRight":"35px"}}>
             <h2>Find us on</h2>
-            <Container>
                 <Row>
                     <Col>
-                        <Container>
+
                             <a href={links.Twitter} style={styless.a}><AiFillTwitterSquare style={styless.icon}/></a>
                             <a href={links.Linkedin} style={styless.a}>  <AiFillLinkedin style={styless.icon}/></a>
                             <a href={links.Facebook}style={styless.a}> <AiFillFacebook style={styless.icon}/></a>
                             <a href={links.Youtube}style={styless.a}>  <AiFillYoutube style={styless.icon}/></a>
                             <a href={links.Discord}style={styless.a}>  <FaDiscord style={styless.icon}/></a>
-                        </Container>
+
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <Container>
+
                             <a href={links.Telegram}style={styless.a}> <FaTelegramPlane style={styless.icon}/></a>
                             <a href={links.Reddit}style={styless.a}>  <FaRedditSquare style={styless.icon}/></a>
                             <a href={links.Github}style={styless.a}>   <AiFillGithub style={styless.icon}/></a>
                             <a href={links.Medium}style={styless.a}>   <AiFillMediumSquare style={styless.icon}/></a>
                             <a href={links.Email}style={styless.a}>   <AiFillMail style={styless.icon}/></a>
                             <a href={links.Instagram}style={styless.a}>    <AiFillInstagram style={styless.icon}/></a>
-                        </Container>
+
                     </Col>
                 </Row>
-            </Container>
+
         </div>
     )
 }

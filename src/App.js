@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './components/footer';
 import AddressBar from './components/addressBar';
 import NavbarCustom from './components/navbar';
-import Carrer from './pages/carrer';
+import Career from './pages/carrer';
 import Token from './pages/token';
 import User from './pages/users';
 import Partners from './pages/partners';
@@ -15,18 +15,22 @@ import Teams from './pages/teams';
 import MVP from './pages/mvp';
 import Whitepaper from './pages/whitepaper';
 import ContactForm from './pages/contact';
+import About from './pages/about';
 
 
 function App() {
   return (
-    <div>
+    <div style={{height:"100%"}}>
       <HashRouter>
       <NavbarCustom/>
+      <div style={{minHeight:"350px"}}>
         <Switch>
-          <Route exact path='/home'><Home/></Route>
+        <Route exact path='/'><Home/></Route>
+          <Route path='/home'><Home/></Route>
           <Route path='/team'><Teams/></Route>
+          <Route path='/about'><About/></Route>
           <Route path='/token'><Token/></Route>
-          <Route path='/career'><Carrer/></Route>
+          <Route path='/careers'><Career/></Route>
           <Route path='/whitepaper'><Whitepaper/></Route>
           <Route path='/investor'><Investors/></Route>
           <Route path='/partners'><Partners/></Route>
@@ -36,6 +40,7 @@ function App() {
           <Route path='/signup'><SignUp/></Route>
           <Route path="/contact"><ContactForm/></Route>
         </Switch>
+        </div>
       </HashRouter>
       <AddressBar/>
       <Footer/>
