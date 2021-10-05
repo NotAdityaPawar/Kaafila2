@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Kaafila2/static/css/main.5739ad41.chunk.css",
-    "main.js": "/Kaafila2/static/js/main.108b0085.chunk.js",
-    "main.js.map": "/Kaafila2/static/js/main.108b0085.chunk.js.map",
+    "main.js": "/Kaafila2/static/js/main.9c4532e6.chunk.js",
+    "main.js.map": "/Kaafila2/static/js/main.9c4532e6.chunk.js.map",
     "runtime-main.js": "/Kaafila2/static/js/runtime-main.b26b85fb.js",
     "runtime-main.js.map": "/Kaafila2/static/js/runtime-main.b26b85fb.js.map",
     "static/css/2.f2512455.chunk.css": "/Kaafila2/static/css/2.f2512455.chunk.css",
@@ -41,6 +41,6 @@
     "static/css/2.f2512455.chunk.css",
     "static/js/2.2ceca683.chunk.js",
     "static/css/main.5739ad41.chunk.css",
-    "static/js/main.108b0085.chunk.js"
+    "static/js/main.9c4532e6.chunk.js"
   ]
 }
