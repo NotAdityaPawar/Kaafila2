@@ -1,5 +1,6 @@
 import { Container,Button, Row, Col,Form,Image } from "react-bootstrap"
 import {Link} from 'react-router-dom'
+import Sidebar from "../components/sidebar"
 
 export default function Partners(){
     const data = {
@@ -12,14 +13,20 @@ export default function Partners(){
     }
     return(
         <Container >
-            <h1>Partners</h1>
-            <p>{data.p1}</p>
-            <p>{data.p2}</p>
-            <p>{data.p3}</p>
-            <p>{data.p4}</p>
-            <p>{data.p5}</p>
-            <p>{data.p6}</p>
-
+            <Row>
+                <Col>
+                    <h1>Partners</h1>
+                    <p>{data.p1}</p>
+                    <p>{data.p2}</p>
+                    <p>{data.p3}</p>
+                    <p>{data.p4}</p>
+                    <p>{data.p5}</p>
+                    <p>{data.p6}</p>
+                </Col>
+                <Col sm={12} lg={3}>
+                    <Sidebar/>
+                </Col>
+            </Row>
         </Container>
     )
 }

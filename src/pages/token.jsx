@@ -1,4 +1,5 @@
 import { Container, Row ,Button,Col} from "react-bootstrap";
+import Sidebar from "../components/sidebar";
 
 export default function Token(){
     const data = {
@@ -50,6 +51,8 @@ export default function Token(){
     return(
         <Container>
             <Row>
+                <Col sm={12} lg={9}>
+            <Row>
                 <Col>
                     <h2 style={styless.header}>Token Information</h2>
                 </Col>
@@ -63,6 +66,11 @@ export default function Token(){
             </Row>
             <h4>{data.h1}</h4><a href={data.url1}>{data.url1}</a>
             <h5>{data.h2}</h5>
+            </Col>
+            <Col sm={12} lg={3}>
+                <Sidebar/>
+            </Col>
+            </Row>
         </Container>
     )
 }

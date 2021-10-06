@@ -1,8 +1,9 @@
-import { Container,Button, Image } from "react-bootstrap"
+import { Container,Button, Image,Row,Col } from "react-bootstrap"
 import KaafilaFocus from "../images/Kaafila-focus-areas.png"
 import Algorand from "../images/algorand.png"
 import Mascot from "../images/mascot.jpg"
 import React from 'react'
+import Sidebar from "../components/sidebar"
 
 
 const styles = {
@@ -99,7 +100,7 @@ export default class About extends React.Component{
         else if(objKey.indexOf('image') !== -1){
             return (
                 <React.Fragment>
-                    <Image src={data.image} style={{ maxWidth:"100%"}}></Image>
+                    <Image src={data.image} style={{ maxWidth:"100%",alignItems:"center"}}></Image>
                 </React.Fragment>
             )
         }
@@ -107,7 +108,10 @@ export default class About extends React.Component{
 
 render(){
         return(
-            <Container >
+            <div>
+            <Container>
+                <Row>
+                    <Col sm ={12} lg={9}>
                 <h2>About</h2>
                 <p>{data.vision}</p>
 
@@ -118,7 +122,13 @@ render(){
                         this.showContent(item)
                     )
                 )}
+                </Col>
+                <Col lg={3} sm={12}>
+                    <Sidebar/>
+                </Col>
+                </Row>
             </Container>
+            </div>
         )
     }
 }

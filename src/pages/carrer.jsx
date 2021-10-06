@@ -1,4 +1,5 @@
 import { Col, Container ,Image,Row,Button,Form} from "react-bootstrap";
+import Sidebar from "../components/sidebar";
 
 export default function Career(){
     const data = {
@@ -22,12 +23,19 @@ export default function Career(){
     }
     return(
         <Container style={styless.container}>
-            <Container style={styless.container}>{data.para1}</Container>
-            <Container style={styless.container}>{data.para2}</Container>
-            <Container style={styless.container} >{data.para3}</Container>
-            <Container style={styless.container}>{data.para4}</Container>
-            <Container style={styless.container}>{data.para5.p1}</Container>
-            <Container style={styless.container}>{data.para6}</Container>
+            <Row>
+                <Col>
+                    <Container style={styless.container}>{data.para1}</Container>
+                    <Container style={styless.container}>{data.para2}</Container>
+                    <Container style={styless.container} >{data.para3}</Container>
+                    <Container style={styless.container}>{data.para4}</Container>
+                    <Container style={styless.container}>{data.para5.p1}</Container>
+                    <Container style={styless.container}>{data.para6}</Container>
+                </Col>
+                <Col sm={12} lg={3}>
+                    <Sidebar/>
+                </Col>
+            </Row>
         </Container>
     )
 }
