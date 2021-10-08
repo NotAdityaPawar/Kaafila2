@@ -144,13 +144,13 @@ render(){
                     </Row>
 
                     {/* Token info in form of button */}
-                    <Row>
+                    {/*<Row>
                         <Col style={this.state.styless.header}>
                             {this.state.tokenContents.map((items, index) =>
                                 <div style={this.state.styless.buttonContainer}><Button style={this.state.styless.button} sm={12}>{items}</Button></div>
                             )}
                         </Col>
-                    </Row>
+                    </Row>*/}
                     {/* Token info in form of button */}
                     {/* yes you can bang your computer, hammer time!!*/}
                     {/* Assignment Create rest of the code here */}
